@@ -1,6 +1,7 @@
 package com.gnbarbersop.scheduler.entity;
 
 import com.gnbarbersop.scheduler.dto.UserDto;
+import com.gnbarbersop.scheduler.entity.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

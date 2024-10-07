@@ -1,4 +1,4 @@
-package com.gnbarbersop.scheduler.entity;
+package com.gnbarbersop.scheduler.entity.enums;
 
 import lombok.Getter;
 

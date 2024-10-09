@@ -1,13 +1,13 @@
 package com.gnbarbersop.scheduler.entity.enums;
 
-public enum HourStatus {
+public enum AppointmentStatus {
     PENDING("PENDING"),
-    SCHEDULED("SCHEDULED"),
+    BOOKED("BOOKED"),
     DONE("DONE");
 
     private String status;
 
-    HourStatus(String status) {
+    AppointmentStatus(String status) {
         this.status = status;
     }
 }

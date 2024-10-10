@@ -29,7 +29,7 @@ public class AppointmentService {
     public void create(AppointmentDto dto, String servicoId, String userId) {
 
         //Verificar se o horario desejado ja está marcado
-        Optional<AppointmentEntity> alreadyBooked = appointmentRepository.findByDateScheduledAndSatus(dto.dateScheduled(), AppointmentStatus.valueOf("BOOKED"));
+        Optional<AppointmentEntity> alreadyBooked = appointmentRepository.findByBookedDateAndStatus(dto.bookedDate(), AppointmentStatus.valueOf("BOOKED"));
         if (alreadyBooked.isPresent()) {
             throw new RuntimeException("Appointment already been booked.");
         }

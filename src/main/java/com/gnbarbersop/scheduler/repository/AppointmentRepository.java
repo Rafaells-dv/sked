@@ -8,5 +8,5 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 public interface AppointmentRepository extends JpaRepository<AppointmentEntity, String> {
-    Optional<AppointmentEntity> findByDateScheduledAndSatus(LocalDateTime dateScheduled, AppointmentStatus status);
+    Optional<AppointmentEntity> findByBookedDateAndStatus(LocalDateTime bookedDate, AppointmentStatus status);
 }

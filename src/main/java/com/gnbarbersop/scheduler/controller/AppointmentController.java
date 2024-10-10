@@ -1,6 +1,5 @@
 package com.gnbarbersop.scheduler.controller;
 
-
 import com.gnbarbersop.scheduler.dto.AppointmentDto;
 import com.gnbarbersop.scheduler.service.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/hour")
+@RequestMapping("/appointment")
 public class AppointmentController {
 
     @Autowired

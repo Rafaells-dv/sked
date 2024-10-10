@@ -19,7 +19,7 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping()
+    @GetMapping("/register")
     public ResponseEntity<?> createUser(@RequestParam String userEmail) {
         UserDetails user = userRepository.findByEmail(userEmail);
         return ResponseEntity.ok(user);

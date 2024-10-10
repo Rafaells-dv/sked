@@ -21,7 +21,7 @@ public class AppointmentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
-    private LocalDateTime dateScheduled;
+    private LocalDateTime bookedDate;
     private LocalDateTime creationDate;
 
     @Enumerated(EnumType.STRING)
